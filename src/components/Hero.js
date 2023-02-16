@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
-import heroBcg from '../assets/hero-bcg.jpeg'
-import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+// import heroBcg from '../assets/hero-bcg.jpeg'
+// import heroBcg2 from '../assets/hero-bcg-2.jpeg'
+import heroBcg from '../assets/hero-bcg.svg'
 
 const Hero = () => {
   return (
@@ -22,7 +23,6 @@ const Hero = () => {
       </article>
       <article className="img-container">
         <img src={heroBcg} alt="nice table" className="main-img" />
-        <img src={heroBcg2} alt="person working" className="accent-img" />
       </article>
     </Wrapper>
   )
@@ -46,7 +46,7 @@ const Wrapper = styled.section`
   @media (min-width: 992px) {
     height: calc(100vh - 5rem);
     grid-template-columns: 1fr 1fr;
-    gap: 8rem;
+    gap: 2rem;
     h1 {
       margin-bottom: 2rem;
     }
